@@ -13,11 +13,9 @@ import TryHello from "./components/TryHello";
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/" component={SeoDB} />
-
-        <Route path="/seo/:seoTitle" component={SeoPost} />
-      </Switch>
+      <Route exact path="/" component={SeoDB} />
+      <Route path="/seo/:seoTitle" component={SeoPost} />
+      <Route path="/hello" component={Hello} />
     </Router>
   );
 }

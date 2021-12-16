@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import Blogs from "./components/Blog";
+import BlogPostCopy from "./components/BlogPostCopy";
+import Homepage from "./components/Homepage";
+import "./App.css";
+import SeoPost from "./components/SeoPost";
+import SeoDB from "./components/Seo";
+import Hello from "./components/Hello";
+import TryHello from "./components/TryHello";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" component={SeoDB} />
+
+        <Route path="/seo/:seoTitle" component={SeoPost} />
+      </Switch>
+    </Router>
   );
 }
 

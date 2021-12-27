@@ -14,7 +14,7 @@ const Homepage = () => {
           <ul>
             <h2>Entreprise</h2>
             <li>
-              <Link to="/hello">🚀 Actualités</Link>
+              <Link to="/seo">🚀 Actualités</Link>
             </li>
             <li>Ressources Humaines</li>
           </ul>

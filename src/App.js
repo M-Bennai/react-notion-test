@@ -14,9 +14,11 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={SeoDB} />
+        <Route exact path="/seo" component={SeoDB} />
 
-        <Route path="/seo/:seoTitle" component={SeoPost} />
+        <Route path="/seo/:seoTitle">
+          <SeoPost />
+        </Route>
       </Switch>
     </Router>
   );

@@ -8,7 +8,7 @@ const SeoPost = () => {
 
   async function SeoNameToId(seoSlug) {
     const seosDatabase = await fetch(
-      "https://notion-api.splitbee.io/v1/table/322f531edcf44b20b359c06ddb40adbf"
+      "https://notion-api.splitbee.io/v1/table/c4b908bdb4f0418e9ec7e8a55b56e267"
     ).then((res) => res.json());
     console.log("seosDatabase :>> ", seosDatabase);
 
